@@ -24,7 +24,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-width: 1px;
+    border-width: 5px;
     border-color: black;
 }
 
@@ -37,9 +37,10 @@ header a:visited {
     text-decoration: none;
 }
 
+.ikonkadiv:hover,
 header a:hover {
     color: black;
-    background-color: grey;
+    background-color: plum;
     text-decoration: none;
 }
 
