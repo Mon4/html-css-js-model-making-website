@@ -1,0 +1,94 @@
+h1 {
+    max-width: fit-content;
+}
+
+.linki {
+    font-size: 20px;
+    min-width: 100px;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-decoration: none;
+    border-radius: 20%;
+    background-color: blueviolet;
+    margin-left: 1%;
+}
+
+
+/* .ikonka {
+    background-color: blueviolet;
+    min-width: 50px;
+    min-height: 50px;
+    border-width: 1px;
+    border-color: black;
+    margin-left: 1%;
+} */
+
+
+/* .ikonka {
+    min-width: 50px;
+} */
+
+
+/* .t {
+    background-color: blueviolet;
+} */
+
+header a:link {
+    text-decoration: none;
+}
+
+header a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: black;
+    background-color: grey;
+    text-decoration: none;
+}
+
+.nav-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 0px) {
+    header {
+        background-color: blue;
+    }
+    h1 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        background-color: yellow;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    header {
+        background-color: aquamarine;
+    }
+    img {
+        display: none;
+    }
+    h1 {
+        display: inline;
+    }
+}
