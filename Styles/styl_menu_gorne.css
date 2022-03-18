@@ -4,26 +4,13 @@ h1 {
 
 .linki {
     font-size: 20px;
-    min-width: 100px;
-    min-height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
     text-decoration: none;
-    border-radius: 20%;
-    background-color: blueviolet;
-    margin-left: 1%;
 }
-
-.ikonka {}
 
 .ikonkadiv {
     background-color: blueviolet;
     min-width: 100px;
-    min-height: 50px;
+    min-height: 70px;
     border-radius: 20%;
     margin-left: 1%;
     display: flex;
@@ -32,16 +19,6 @@ h1 {
     border-color: black;
     justify-content: center;
 }
-
-
-/* .ikonka {
-    2xl
-} */
-
-
-/* .t {
-    background-color: blueviolet;
-} */
 
 header a:link {
     text-decoration: none;
@@ -62,13 +39,14 @@ header a:hover {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding-top: 20px;
 }
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 @media only screen and (min-width: 0px) {
@@ -78,11 +56,20 @@ header {
     h1 {
         display: none;
     }
+    #hbutton {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 600px) {
     header {
         background-color: yellow;
+    }
+    #ikonka {
+        display: none;
+    }
+    #hbutton {
+        display: inline;
     }
 }
 
