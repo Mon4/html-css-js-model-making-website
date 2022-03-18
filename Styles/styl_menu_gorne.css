@@ -18,19 +18,24 @@ h1 {
     margin-left: 1%;
 }
 
+.ikonka {}
 
-/* .ikonka {
+.ikonkadiv {
     background-color: blueviolet;
-    min-width: 50px;
+    min-width: 100px;
     min-height: 50px;
+    border-radius: 20%;
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
     border-width: 1px;
     border-color: black;
-    margin-left: 1%;
-} */
+    justify-content: center;
+}
 
 
 /* .ikonka {
-    min-width: 50px;
+    2xl
 } */
 
 
