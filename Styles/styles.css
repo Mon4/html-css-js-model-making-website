@@ -45,15 +45,13 @@ footer {
 
 *,
 html {
-    margin: 0;
-    padding: 0;
     scroll-behavior: smooth;
+    margin: 0;
 }
 
 body {
     background-color: grey;
     color: black;
-    size: 12px;
     font-family: 'Quicksand', sans-serif;
     text-align: justify;
     text-justify: inter-word;
@@ -150,6 +148,7 @@ a:active {
 hr {
     width: 70%;
     margin-top: 5%;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
