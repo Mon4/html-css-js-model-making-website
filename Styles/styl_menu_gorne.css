@@ -8,14 +8,7 @@ h1 {
     font-weight: bold;
 }
 
-
-/* #hbutton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-.ikonkadiv {
+.logo .ikonkadiv {
     background-color: blueviolet;
     min-width: 100px;
     min-height: 70px;
@@ -85,5 +78,8 @@ header {
     }
     h1 {
         display: flex;
+    }
+    h3 {
+        display: none;
     }
 }
