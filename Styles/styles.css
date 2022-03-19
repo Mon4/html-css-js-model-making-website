@@ -46,22 +46,16 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    padding-bottom: 2.5%;
-    padding-top: 2.5%;
+    padding: 2.5%;
 }
 
 table {
     background-color: lavender;
     border-collapse: collapse;
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    align-self: center;
 }
 
 td,
 th {
-    width: 50px;
     text-align: center;
     padding: 10px;
     border: 0.5px dotted;
@@ -151,4 +145,8 @@ hr {
 
 .container h1 {
     padding-bottom: 2.5%;
+}
+
+.container h3 {
+    padding-bottom: 1.5%;
 }
