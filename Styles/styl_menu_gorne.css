@@ -1,5 +1,7 @@
-h1 {
+header h1 {
     max-width: fit-content;
+    margin-left: 10px;
+    padding-top: 10px;
 }
 
 .linki {
@@ -13,12 +15,16 @@ h1 {
     min-width: 100px;
     min-height: 70px;
     border-radius: 20%;
-    margin-left: 1%;
+    margin-right: 1%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-width: 5px;
     border-color: black;
+}
+
+#ikonka {
+    min-width: 60px;
 }
 
 header a:link {
@@ -41,21 +47,23 @@ header a:hover {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-self: center;
+    justify-self: center;
 }
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    height: 85px;
+    padding-top: 10px;
 }
 
 @media only screen and (min-width: 0px) {
     header {
         background-color: aquamarine;
     }
-    h1 {
+    .logo h1 {
         display: none;
     }
     #hbutton {
@@ -76,41 +84,10 @@ header {
     img {
         display: none;
     }
-    h1 {
+    .logo h1 {
         display: flex;
     }
     h3 {
         display: none;
     }
 }
-
-.box {
-    background-color: black;
-    width: 80%;
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 2.5%;
-    padding-top: 2.5%;
-}
-
-.bg {
-    display: flex;
-    background-color: blue;
-    flex-direction: column;
-    align-items: center;
-    height: 1000px;
-}
-
-.emptydiv {
-    min-height: 100px;
-    background-color: antiquewhite;
-    width: 80%;
-}
-
-
-/* hr {
-    width: 70%;
-} */
