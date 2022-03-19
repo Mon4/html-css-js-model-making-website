@@ -87,7 +87,13 @@ header {
 .box {
     background-color: black;
     width: 80%;
-    height: 1000px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 2.5%;
+    padding-top: 2.5%;
 }
 
 .bg {
@@ -95,6 +101,13 @@ header {
     background-color: blue;
     flex-direction: column;
     align-items: center;
+    height: 1000px;
+}
+
+.emptydiv {
+    min-height: 100px;
+    background-color: antiquewhite;
+    width: 80%;
 }
 
 
