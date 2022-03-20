@@ -4,6 +4,10 @@ header h1 {
     padding-top: 10px;
 }
 
+.container {
+    scroll-margin-top: 80px
+}
+
 .linki {
     font-size: 22px;
     text-decoration: none;
@@ -23,7 +27,7 @@ header h1 {
     border-color: black;
 }
 
-#ikonka {
+.ikonka {
     min-width: 60px;
 }
 
@@ -66,16 +70,16 @@ header {
     .logo h1 {
         display: none;
     }
-    #hbutton {
+    .hbutton {
         display: none;
     }
 }
 
 @media only screen and (min-width: 600px) {
-    #ikonka {
+    .ikonka {
         display: none;
     }
-    #hbutton {
+    .hbutton {
         display: flex;
     }
 }

@@ -80,23 +80,18 @@ th {
     margin-bottom: 2%;
 }
 
-.link {
-    color: wheat;
-}
-
 a {
     padding-top: 5%;
     display: block;
     text-align: center;
+    color: black;
 }
 
 a:link {
-    color: black;
     text-decoration: none;
 }
 
 a:hover {
-    color: darkgrey;
     text-decoration: underline;
 }
 
