@@ -34,3 +34,9 @@
 /* .side-btn-container {
     background-color: antiquewhite;
 } */
+
+.landing-page {
+    height: 100vh;
+    min-width: 100%;
+    object-fit: cover;
+}

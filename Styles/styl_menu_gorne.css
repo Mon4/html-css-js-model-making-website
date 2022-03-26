@@ -61,12 +61,10 @@ header {
     justify-content: space-between;
     height: 85px;
     padding-top: 10px;
+    background-color: aquamarine;
 }
 
 @media only screen and (min-width: 0px) {
-    header {
-        background-color: aquamarine;
-    }
     .logo h1 {
         display: none;
     }
@@ -85,7 +83,7 @@ header {
 }
 
 @media only screen and (min-width: 850px) {
-    img {
+    .logo2 img {
         display: none;
     }
     .logo h1 {
