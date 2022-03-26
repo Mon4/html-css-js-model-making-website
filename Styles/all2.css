@@ -30,13 +30,9 @@
     margin-top: -80px;
 }
 
-
-/* .side-btn-container {
-    background-color: antiquewhite;
-} */
-
-.landing-page {
+.landing-photo {
     height: 100vh;
     min-width: 100%;
     object-fit: cover;
+    transform: scaleX(-1);
 }
