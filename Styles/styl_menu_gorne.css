@@ -74,6 +74,7 @@ header {
     .logo2 {
         display: flex;
         flex-direction: column;
+        animation: 1s logo-show;
     }
 }
 
@@ -92,42 +93,46 @@ header {
     }
     .logo {
         display: flex;
+        animation: 1s logo-show;
     }
 }
 
 .logo:hover,
 .logo2:hover {
     transform: rotate(360deg);
-    animation: logo-animation;
 }
-
-
-/* .logo {
-    height: 50px;
-    text-align: center;
-} */
 
 .logo,
 .logo2 {
     transition: transform 2s;
     transition-duration: 2s;
-    animation-name: logo-animation;
+    animation: 1s logo-show;
 }
 
-@keyframes logo-animation {
+.logo:hover {
+    animation: 1s logo-size;
+}
+
+@keyframes logo-show {
     0% {
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes logo-size {
+    0%,
+    100% {
         font-size: 100%;
     }
-    25% {
+    25%,
+    75% {
         font-size: 75%;
     }
     50% {
         font-size: 50%;
-    }
-    75% {
-        font-size: 75%;
-    }
-    100% {
-        font-size: 100%;
     }
 }
