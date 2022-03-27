@@ -128,3 +128,41 @@ footer {
     background-color: grey;
     text-align: center;
 }
+
+.side-menu-container,
+.side-menu,
+.side-menu>a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+}
+
+.side-menu-container {
+    position: fixed;
+    height: 100vh;
+    left: 0px;
+}
+
+.side-menu>a {
+    margin: 5px 0px;
+    height: 40px;
+    background-color: grey;
+}
+
+.side-menu>a:hover {
+    margin: 5px 0px;
+    height: 40px;
+    color: #fff;
+}
+
+.side-menu-container {
+    margin-top: -80px;
+    z-index: -1;
+}
+
+.landing-photo {
+    height: 100vh;
+    min-width: 100%;
+}
