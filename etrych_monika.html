@@ -20,6 +20,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/9fc6aad3f5.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -34,30 +36,30 @@
 
         <div>
             <nav class="nav-top">
-                <div class="ikonkadiv ikonka"><a href="#sekcja1"><i class="fa-solid fa-image fa-2x"></i></a></div>
+                <div class="ikonkadiv ikonka"><a class="przycisk" href="#sekcja1"><i class="fa-solid fa-image fa-2x"></i></a></div>
                 <div class="ikonkadiv ikonka">
-                    <a href="#sekcja2"><i class="fa-solid fa-font fa-2x"></i></a></div>
+                    <a class="przycisk" href="#sekcja2"><i class="fa-solid fa-font fa-2x"></i></a></div>
                 <div class="ikonkadiv ikonka">
-                    <a href="#sekcja3"><i class="fa-solid fa-align-justify fa-2x"></i></a>
+                    <a class="przycisk" href="#sekcja3"><i class="fa-solid fa-align-justify fa-2x"></i></a>
                 </div>
                 <div class="ikonkadiv ikonka">
-                    <a href="#sekcja4"><i class="fa-solid fa-table fa-2x"></i></a>
+                    <a class="przycisk" href="#sekcja4"><i class="fa-solid fa-table fa-2x"></i></a>
                 </div>
 
-                <div class="ikonkadiv hbutton"><a class="linki" href="#sekcja1">Sekcja 1</a></div>
-                <div class="ikonkadiv hbutton"><a class="linki" href="#sekcja2">Sekcja 2</a></div>
-                <div class="ikonkadiv hbutton"><a class="linki" href="#sekcja3">Sekcja 3</a></div>
-                <div class="ikonkadiv hbutton"><a class="linki" href="#sekcja4">Sekcja 4</a></div>
+                <div class="ikonkadiv hbutton"><a class="linki przycisk" href="#sekcja1">Sekcja 1</a></div>
+                <div class="ikonkadiv hbutton"><a class="linki przycisk" href="#sekcja2">Sekcja 2</a></div>
+                <div class="ikonkadiv hbutton"><a class="linki przycisk" href="#sekcja3">Sekcja 3</a></div>
+                <div class="ikonkadiv hbutton"><a class="linki przycisk" href="#sekcja4">Sekcja 4</a></div>
             </nav>
         </div>
     </header>
 
     <div class="side-menu-container" style="position: fixed;">
         <nav class="side-menu">
-            <a href="#sekcja1">
+            <a class="przycisk" href="#sekcja1">
                 <div class="side-btn-container"><i class="fa-solid fa-image fa-2x"></i></div>
             </a>
-            <a href="#sekcja2">
+            <a class="przycisk" href="#sekcja2">
                 <div class="side-btn-container"><i class="fa-solid fa-font fa-2x"></i></div>
             </a>
             <a href="#sekcja3">
@@ -70,10 +72,7 @@
     </div>
 
     <div class="landing-page">
-        <!-- <img class="landing-photo" src="https://i.imgur.com/zzKbFwW.jpeg" alt="alt"> -->
         <img class="landing-photo" src="https://i.imgur.com/igVxzSN.jpeg" alt="alt">
-        <!-- <img class="landing-photo" src="https://i.imgur.com/pU3K5RT.jpeg" alt="alt"> -->
-
 
     </div>
 
@@ -212,7 +211,15 @@
     <footer>
         Monika Etrych 2022©;
     </footer>
-
+    <script>
+        $(".przycisk").click(function(event) {
+            event.preventDefault();
+            var aid = $(this).attr("href");
+            $('html,body').animate({
+                scrollTop: $(aid).offset().top - 70
+            }, 700);
+        });
+    </script>
 </body>
 
 </html>
