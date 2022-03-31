@@ -35,12 +35,36 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
+    gap: 1.5vh;
+}
+
+.sekcja41div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: darkred;
+    flex: 100%;
+    gap: 1vw;
+}
+
+.lnum,
+.lnonum {
+    /* max-width: 43%; */
+    flex: 50%;
+    background-color: lightgreen;
+    padding: 3%;
+    border-radius: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .tabdiv {
     display: flex;
     flex: 100%;
-    margin-top: 2%;
+    width: 100vw;
+    max-width: 70em;
     background-color: lightgreen;
     border-radius: 2.5%;
     align-items: center;
@@ -93,22 +117,6 @@ a:link {
 
 a:hover {
     text-decoration: underline;
-}
-
-.lnum,
-.lnonum {
-    max-width: 43%;
-    flex: 50%;
-    background-color: lightgreen;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    border-radius: 2.5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
 hr {
