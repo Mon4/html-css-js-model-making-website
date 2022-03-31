@@ -15,7 +15,7 @@ header h1 {
 }
 
 .ikonkadiv {
-    background-color: blueviolet;
+    background-color: var(--violet);
     min-width: 100px;
     min-height: 70px;
     border-radius: 20%;
@@ -24,7 +24,7 @@ header h1 {
     align-items: center;
     justify-content: center;
     border-width: 5px;
-    border-color: black;
+    border-color: var(--black);
 }
 
 .ikonka {
@@ -36,14 +36,14 @@ header a:link {
 }
 
 header a:visited {
-    color: black;
+    color: var(--black);
     text-decoration: none;
 }
 
 .ikonkadiv:hover,
 header a:hover {
-    color: black;
-    background-color: plum;
+    color: var(--black);
+    background-color: var(--pink);
     text-decoration: none;
 }
 
@@ -61,7 +61,7 @@ header {
     justify-content: space-between;
     height: 85px;
     padding-top: 10px;
-    background-color: aquamarine;
+    background-color: var(--aquamarine);
 }
 
 @media only screen and (min-width: 0px) {

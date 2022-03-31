@@ -5,8 +5,8 @@ html {
 }
 
 body {
-    background-color: grey;
-    color: black;
+    background-color: var(--grey);
+    color: var(--black);
     font-family: 'Quicksand', sans-serif;
     text-align: justify;
     text-justify: inter-word;
@@ -31,7 +31,7 @@ body {
 
 .sekcjaflex {
     display: flex;
-    background-color: grey;
+    background-color: var(--grey);
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
@@ -42,7 +42,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: darkred;
     flex: 100%;
     gap: 1vw;
 }
@@ -51,7 +50,7 @@ body {
 .lnonum {
     /* max-width: 43%; */
     flex: 50%;
-    background-color: lightgreen;
+    background-color: var(--lightgreen);
     padding: 3%;
     border-radius: 2.5%;
     display: flex;
@@ -65,7 +64,7 @@ body {
     flex: 100%;
     width: 100vw;
     max-width: 70em;
-    background-color: lightgreen;
+    background-color: var(--lightgreen);
     border-radius: 2.5%;
     align-items: center;
     flex-direction: column;
@@ -74,7 +73,7 @@ body {
 }
 
 table {
-    background-color: lavender;
+    background-color: var(--whiteblue);
     border-collapse: collapse;
 }
 
@@ -87,7 +86,7 @@ th {
 
 .picture {
     border-radius: 5%;
-    box-shadow: 10px 10px 5px black;
+    box-shadow: 10px 10px 5px var(--black);
     max-width: 500px;
     width: 80%;
     display: block;
@@ -96,7 +95,7 @@ th {
 }
 
 .picdiv {
-    background-color: lightgoldenrodyellow;
+    background-color: var(--lightyellow);
     border-radius: 2.5%;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
@@ -108,7 +107,7 @@ a {
     padding-top: 5%;
     display: block;
     text-align: center;
-    color: black;
+    color: var(--black);
 }
 
 a:link {
@@ -133,7 +132,7 @@ hr {
 }
 
 footer {
-    background-color: grey;
+    background-color: var(--grey);
     text-align: center;
 }
 
@@ -161,7 +160,7 @@ footer {
 .side-menu>a:hover {
     margin: 5px 0px;
     height: 40px;
-    color: #fff;
+    color: var(--white);
 }
 
 .side-menu-container {
