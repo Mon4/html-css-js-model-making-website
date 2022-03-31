@@ -199,7 +199,6 @@
                                 <td>niebieski</td>
                                 <td>Japonia</td>
                                 <td>1:24</td>
-
                             </tr>
                         </tbody>
                     </table>
@@ -222,6 +221,12 @@
                 scrollTop: $(aid).offset().top - 70
             }, 700);
         });
+
+        $(document).ready(function() {
+            if ($(document).height() > 1000) {
+                $(".side-menu-container").hide()
+            }
+        })
     </script>
 </body>
 
