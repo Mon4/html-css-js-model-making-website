@@ -36,13 +36,13 @@
     </style>
 </head>
 
-<body>
+<body onload="czas()">
     <header style="position: sticky; top:0;">
         <div class="logo">
             <h1>Modelarstwo</h1>
         </div>
         <div class="logo2">
-            <img style="width:60px; padding-left: 25px; " src="https://i.imgur.com/9xDQArg.png" alt="ALT" />
+            <img src="https://i.imgur.com/9xDQArg.png" alt="ALT" />
             <h3>Modelarstwo</h3>
         </div>
 
@@ -66,7 +66,7 @@
         </div>
     </header>
 
-    <div class="side-menu-container" style="position: fixed;">
+    <div class="side-menu-container" style="position: fixed; display: none;">
         <nav class="side-menu">
             <a class="przycisk" href="#sekcja1">
                 <div class="side-btn-container"><i class="fa-solid fa-image fa-2x"></i></div>
@@ -225,7 +225,14 @@
 
     <hr>
     <footer>
-        Monika Etrych 2022©;
+        Monika Etrych 2022©
+        <div id="zegar">a</div>
+        <script type="text/javascript" src="zegar.js"></script>
+        <script>
+            var intervalId = window.setInterval(function() {
+                czas();
+            }, 1000);
+        </script>
     </footer>
     <script>
         $(".przycisk").click(function(event) {
@@ -236,11 +243,15 @@
             }, 700);
         });
 
-        // $(document).ready(function() {
-        //     if ($(document).height() > 1000) {
-        //         $(".side-menu-container").hide()
-        //     }
-        // })
+        window.onscroll = function() {
+            if ($(window).scrollTop() > $(".landing-page").height()) {
+                $("header").hide()
+                $(".side-menu-container").show()
+            } else {
+                $("header").show()
+                $(".side-menu-container").hide()
+            }
+        }
     </script>
 </body>
 

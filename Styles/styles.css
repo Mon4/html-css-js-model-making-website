@@ -1,6 +1,5 @@
 *,
 html {
-    /* scroll-behavior: smooth; */
     margin: 0;
 }
 
@@ -48,7 +47,6 @@ body {
 
 .lnum,
 .lnonum {
-    /* max-width: 43%; */
     flex: 50%;
     background-color: var(--lightgreen);
     padding: 3%;
@@ -168,6 +166,6 @@ footer {
 }
 
 .landing-photo {
-    height: 100vh;
+    height: 90vh;
     min-width: 100%;
 }
