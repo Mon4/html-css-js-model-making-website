@@ -90,6 +90,7 @@ th {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    min-width: 250px;
 }
 
 .picdiv {
@@ -99,6 +100,7 @@ th {
     padding-bottom: 2.5%;
     width: 70%;
     margin-bottom: 2%;
+    min-width: 300px;
 }
 
 a {
@@ -166,6 +168,6 @@ footer {
 }
 
 .landing-photo {
-    height: 90vh;
-    min-width: 100%;
+    height: auto;
+    width: 100%;
 }

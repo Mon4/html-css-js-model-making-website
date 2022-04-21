@@ -58,38 +58,35 @@
                     <a class="przycisk" href="#sekcja4"><i class="fa-solid fa-table fa-2x"></i></a>
                 </div>
 
-                <div class="ikonkadiv hbutton"><a class="linki przycisk" href="#sekcja1">Sekcja 1</a></div>
-                <div class="ikonkadiv hbutton"><a class="linki przycisk" href="#sekcja2">Sekcja 2</a></div>
-                <div class="ikonkadiv hbutton"><a class="linki przycisk" href="#sekcja3">Sekcja 3</a></div>
-                <div class="ikonkadiv hbutton"><a class="linki przycisk" href="#sekcja4">Sekcja 4</a></div>
+                <div class="ikonkadiv hbutton przycisk"><a class="linki przycisk" href="#sekcja1">Sekcja 1</a></div>
+                <div class="ikonkadiv hbutton przycisk"><a class="linki przycisk" href="#sekcja2">Sekcja 2</a></div>
+                <div class="ikonkadiv hbutton przycisk"><a class="linki przycisk" href="#sekcja3">Sekcja 3</a></div>
+                <div class="ikonkadiv hbutton przycisk"><a class="linki przycisk" href="#sekcja4">Sekcja 4</a></div>
             </nav>
         </div>
     </header>
 
     <div class="side-menu-container" style="position: fixed; display: none;">
         <nav class="side-menu">
-            <a class="przycisk" href="#sekcja1">
+            <a class="przycisk2" href="#sekcja1">
                 <div class="side-btn-container"><i class="fa-solid fa-image fa-2x"></i></div>
             </a>
-            <a class="przycisk" href="#sekcja2">
+            <a class="przycisk2" href="#sekcja2">
                 <div class="side-btn-container"><i class="fa-solid fa-font fa-2x"></i></div>
             </a>
-            <a class="przycisk" href="#sekcja3">
+            <a class="przycisk2" href="#sekcja3">
                 <div class="side-btn-container"><i class="fa-solid fa-align-justify fa-2x"></i></div>
             </a>
-            <a class="przycisk" href="#sekcja4">
+            <a class="przycisk2" href="#sekcja4">
                 <div class="side-btn-container">
                     <i class="fa-solid fa-table fa-2x"></i>
                 </div>
             </a>
-
-
         </nav>
     </div>
 
     <div class="landing-page">
         <img class="landing-photo" src="https://i.imgur.com/igVxzSN.jpeg" alt="alt">
-
     </div>
 
     <div class="container-main">
@@ -238,9 +235,21 @@
         $(".przycisk").click(function(event) {
             event.preventDefault();
             var aid = $(this).attr("href");
+            console.log($(aid).offset().top);
             $('html,body').animate({
-                scrollTop: $(aid).offset().top - 70
-            }, 700);
+                    scrollTop: $(aid).offset().top - 70
+                },
+                700);
+        });
+
+        $(".przycisk2").click(function(event) {
+            event.preventDefault();
+            var aid = $(this).attr("href");
+            console.log($(aid).offset().top);
+            $('html,body').animate({
+                    scrollTop: $(aid).offset().top
+                },
+                700);
         });
 
         window.onscroll = function() {
